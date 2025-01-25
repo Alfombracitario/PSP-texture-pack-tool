@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"imgload",
+  "%Name":"addpng",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"imgload",
+  "name":"addpng",
   "parent":{
-    "name":"tinted images renderer",
-    "path":"folders/tinted images renderer.yy",
+    "name":"scripts",
+    "path":"folders/scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

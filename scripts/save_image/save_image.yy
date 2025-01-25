@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"save_image",
   "parent":{
-    "name":"tinted images renderer",
-    "path":"folders/tinted images renderer.yy",
+    "name":"scripts",
+    "path":"folders/scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
