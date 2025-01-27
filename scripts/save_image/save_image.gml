@@ -8,7 +8,7 @@ function save_image(fname) {
 	sprite = array_create(256);
 	
 	var wd = working_directory+"input/textures/blocks/";
-	var px = res/16;
+	px = res/16;
 	
 	addpng(0,0,0,"grass_top_carried");
 	addpng(1,1,0,"stone");
@@ -17,7 +17,7 @@ function save_image(fname) {
 	addpng(4,4,0,"planks_oak");
 	addpng(5,5,0,"smooth_stone_slab");
 	addpng(6,6,0,"smooth_stone");
-	addpng(7,7,0,"bricks");
+	addpng(7,7,0,"brick");
 	addpng(8,8,0,"tnt_side");
 	addpng(9,9,0,"tnt_top");
 	addpng(10,10,0,"tnt_bottom");
@@ -42,7 +42,7 @@ function save_image(fname) {
 	addpng(28,12,1,"mushroom_red");
 	addpng(29,13,1,"mushroom_brown");
 	addpng(30,14,1,"sapling_birch");
-	//sprite 31: empty
+	empty(15,1); //31
 	addpng(32,0,2,"gold_ore");
 	addpng(33,1,2,"iron_ore");
 	addpng(34,2,2,"coal_ore");
@@ -56,17 +56,17 @@ function save_image(fname) {
 	addpng(42,10,2,"stonebrick_cracked");
 	addpng(43,11,2,"crafting_table_top");
 	addpng(44,12,2,"furnace_front_off");
-	addpng(45,14,2,"furnace_side");
+	addpng(45,13,2,"furnace_side");
 	addpng(46,14,2,"dispenser_front_horizontal");
-	//sprite 47, empty
-	//sprite 48, empty
+	empty(15,2);
+	empty(0,3);
 	addpng(49,1,3,"glass");
 	addpng(50,2,3,"diamond_ore");
 	addpng(51,3,3,"redstone_ore");
 	draw_sprite_ext(black,0,4*res,3*res,px*2,px,0,0,1);
 	addtga(52,4,3,"leaves_oak_carried");
 	addtga(53,5,3,"leaves_oak_carried");
-	//sprite 54 empty
+	empty(6,3);
 	addpng(55,7,3,"deadbush");
 	addtga(56,8,3,"fern_carried");
 	addpng(57,9,3,"stonebrick_carved");
@@ -75,7 +75,7 @@ function save_image(fname) {
 	addpng(60,12,3,"crafting_table_front");
 	addpng(60,13,3,"furnace_front_on");
 	addpng(62,14,3,"furnace_top");	
-	//sprite 63 empty
+	empty(15,3);
 	addpng(64,0,4,"wool_colored_white");
 	addpng(65,1,4,"mob_spawner");
 	addpng(66,2,4,"snow");
@@ -88,10 +88,10 @@ function save_image(fname) {
 	addtga(73,9,4,"reeds");
 	addpng(74,10,4,"noteblock");
 	addpng(75,11,4,"jukebox_top");
-	//sprite 76 empty
-	//sprite 77 empty
-	//sprite 78 empty
-	//sprite 79 empty
+	empty(12,4);
+	empty(13,4);
+	empty(14,4);
+	empty(15,4);
 	addpng(80,0,5,"torch_on");
 	addpng(81,1,5,"door_wood_upper");
 	addpng(82,2,5,"door_iron_upper");
@@ -114,16 +114,60 @@ function save_image(fname) {
 	addpng(99,3,6,"redstone_torch_on");
 	draw_sprite_ext(black,0,4*res,6*res,px*2,px,0,0,1);
 	addtga(100,4,6,"leaves_birch_carried");
-	addtga(101,5,6,"pumpkin_top");
-	//sprite 102 empty
-	//sprite 103 empty
-	//sprite 104 empty
-	
+	addtga(101,5,6,"leaves_birch_carried");
+	addtga(102,6,6,"pumpkin_top");
+	empty(7,6);
+	empty(8,6);
+	empty(9,6);
+	addpngext(104,10*res,(6*res)+(8*px),"melon_stem_disconnected",c_green,0,0,16,8,1,1);
+	addpngext(105,11*res,(6*res)+(4*px),"melon_stem_disconnected",c_green,0,0,16,12,1,1);
+	addpngext(106,12*res,6*res,"melon_stem_disconnected",c_green,0,0,16,16,1,1);
+	addpngext(107,13*res,6*res,"melon_stem_connected",c_green,0,0,16,16,1,1);
+	addpng(108,14,6,"melon_side");
+	addpng(109,15,6,"melon_top");
+	addpng(110,0,7,"rail_normal_turned");
+	addpng(111,1,7,"wool_colored_black");
+	addpng(112,2,7,"wool_colored_gray");
+	addpng(113,3,7,"redstone_torch_off");
+	addpng(114,4,7,"log_spruce");
+	addpng(115,5,7,"log_birch");
+	addpng(116,6,7,"pumpkin_side");
+	addpng(117,7,7,"pumpkin_face_off");
+	addpng(118,8,7,"pumpkin_face_on");
+	addpng(119,9,7,"cake_top");
+	addpng(120,10,7,"cake_side");
+	addpng(121,11,7,"cake_inner");
+	addpng(122,12,7,"cake_bottom");
+	addpngext(123,14*res,7*res,"melon_stem_connected",c_green,0,0,16,16,-1,1);
+	empty(14,7);
+	empty(15,7);
+	addpng(126,0,8,"rail_normal");
+	addpng(127,1,8,"wool_colored_red");
+	addpng(128,2,8,"wool_colored_pink");
+	addpng(129,3,8,"repeater_off");
+	draw_sprite_ext(black,0,4*res,8*res,px*2,px,0,0,1);
+	addpng(130,4,8,"leaves_spruce_carried");
+	addpng(131,5,8,"leaves_spruce_carried");
+	addpng(132,6,8,"bed_feet_top");
+	addpng(133,7,8,"bed_head_top");
+	addpng(134,8,8,"planks_spruce");
+	addpng(135,9,8,"planks_birch");
+	addpng(136,10,8,"potatoes_stage_0");
+	addpng(137,11,8,"potatoes_stage_1");
+	addpng(138,12,8,"potatoes_stage_2");
+	addpng(139,13,8,"potatoes_stage_3");
+	addpng(140,14,8,"carrots_stage_3");
+	empty(15,8);
+	addpng(142,0,9,"lapis_block");
+	addpng(143,1,9,"wool_colored_green");
+	addpng(144,2,9,"wool_colored_lime");
+	addpng(145,3,9,"repeater_off");
+	empty(4,9);
 	
     surface_reset_target();
 
     surface_save(screen_surf,working_directory+"output/"+fname);
 	
     surface_free(screen_surf);
-
+	game_end();
 }
