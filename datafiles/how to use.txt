@@ -1,0 +1,6 @@
+create a folder called "input" then place your uncompress bedrock texture pack.
+
+yep, that's everything!
+
+
+the texture pack will be saved in output

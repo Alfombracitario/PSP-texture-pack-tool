@@ -20,7 +20,7 @@
     {"$GMFolder":"","%Name":"tinted images renderer","folderPath":"folders/tinted images renderer.yy","name":"tinted images renderer","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"input.zip","CopyToMask":-1,"filePath":"datafiles","name":"input.zip","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"how to use.txt","CopyToMask":-1,"filePath":"datafiles","name":"how to use.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
